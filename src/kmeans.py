@@ -10,7 +10,7 @@ def find_nearest(array, value):
 class Kmeans(object):
     def __init__(self, inputs, means):
         self.inputs = inputs
-        self.centroids = means
+        self.centroids = means[:]
         self.change_made = True
         print ("original centroids", self.centroids)
 
