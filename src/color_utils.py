@@ -9,5 +9,7 @@ def euclidean_distance(pixel_one, pixel_two):
 def average(inputs):
     '''find the average color that is the sum of each component over the length'''
     mapped = np.asarray(list(map(lambda x: x.data, inputs)))
-    return np.sum(mapped, axis=-2) / len(mapped)
+    average = np.sum(mapped, axis=-2) / len(mapped)
+    return tuple(np.round(average, 0))
+    return tuple(np.sum(mapped, axis=-2) / len(mapped))
     # return np.average(inputs, axis=-2) #might work?

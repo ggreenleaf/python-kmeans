@@ -12,6 +12,7 @@ class Kmeans(object):
         self.inputs = inputs
         self.centroids = means
         self.change_made = True
+        print ("original centroids", self.centroids)
 
     def start(self):
         gen = 0
